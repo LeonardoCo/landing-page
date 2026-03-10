@@ -1,11 +1,20 @@
+html {
+  background-color: green;
+}
+
 body {
-  height: 100vh;
+  min-height: 100vh;
   font-family: "Roboto", sans-serif;
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: stretch;
+  background-color: red;
+}
+
+.first, .second, .third, .fourth {
+  min-height: 390px;
 }
 
 .first {
@@ -41,6 +50,7 @@ body {
 .header-links a,
 .left p {
   font-size: 18px;
+  font-weight: 300;
   color: #e5e7eb;
 }
 
@@ -83,7 +93,7 @@ body {
 .card-container {
   display: flex;
   justify-content: center;
-  gap: 32px;
+  gap: 64px;
 }
 
 .card {
@@ -105,11 +115,18 @@ body {
 .quote-container {
   display: flex;
   flex-direction: column;
-  width: 496px;
+  width: 790px;
 }
 
 .author {
   align-self: flex-end;
+}
+
+.quote {
+  font-size: 36px;
+  font-weight: 300;
+  color: #1f2937;
+  margin-bottom: 0;
 }
 
 .fourth {
@@ -117,20 +134,37 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #f9faf8;
 }
 
 .action-container {
-  width: 496px;
+  width: 790px;
   height: 100px;
   background-color: #3882f6;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 64px;
+  margin-top: auto;
+  border-radius: 5px;
 }
 
 .left {
   width: 400px;
+}
+
+.left .action-text {
+  margin: 0;
+  font-weight: 600;
+}
+
+.left .small {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.action-container .sign-up {
+  border: solid 1px;
+  border-color: #f9faf8;
 }
 
 .footer {
@@ -138,6 +172,9 @@ body {
   padding: 16px;
   background-color: #1f2937;
   color: #f9faf8;
+  text-align: center;
+  font-size: 12px;
+  margin-top: auto;
 }
 
 ul {
